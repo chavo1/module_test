@@ -1,13 +1,3 @@
-terraform {
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "chavo_free"
-
-    workspaces {
-      name = "test_module"
-    }
-  }
-}
 module "test" {
   source = "./test"
 }
